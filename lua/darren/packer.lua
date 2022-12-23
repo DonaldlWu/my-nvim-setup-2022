@@ -45,6 +45,10 @@ return require('packer').startup(function(use)
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
   use {
+  'lewis6991/gitsigns.nvim',
+  }
+
+  use {
   "nvim-neo-tree/neo-tree.nvim",
     branch = "v2.x",
     requires = {
