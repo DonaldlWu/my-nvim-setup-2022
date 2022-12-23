@@ -43,13 +43,6 @@ return require('packer').startup(function(use)
 
   use("folke/zen-mode.nvim")
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
-  use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd('colorscheme rose-pine')
-	  end
-  })
 
   use {
   "nvim-neo-tree/neo-tree.nvim",
@@ -60,5 +53,13 @@ return require('packer').startup(function(use)
       "MunifTanjim/nui.nvim",
     }
   }
+
+  use({
+	  'rose-pine/neovim',
+	  as = 'rose-pine',
+	  config = function()
+		  vim.cmd('colorscheme rose-pine')
+	  end
+  })
 
 end)
