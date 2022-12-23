@@ -41,6 +41,10 @@ return require('packer').startup(function(use)
 	  }
   }
 
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+      require("toggleterm").setup()
+  end}
+
   use("folke/zen-mode.nvim")
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
