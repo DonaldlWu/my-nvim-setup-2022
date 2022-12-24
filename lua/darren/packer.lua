@@ -18,6 +18,8 @@ return require('packer').startup(function(use)
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
+  use("rebelot/heirline.nvim")
+  use("rebelot/kanagawa.nvim")
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -68,5 +70,4 @@ return require('packer').startup(function(use)
       "MunifTanjim/nui.nvim",
     }
   }
-  use 'almo7aya/neogruvbox.nvim'
 end)
