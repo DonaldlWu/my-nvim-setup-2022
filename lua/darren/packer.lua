@@ -41,6 +41,13 @@ return require('packer').startup(function(use)
 	  }
   }
 
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
+
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
       require("toggleterm").setup()
   end}
