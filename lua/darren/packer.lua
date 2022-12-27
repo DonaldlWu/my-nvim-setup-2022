@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
   use('tpope/vim-fugitive')
   use("rebelot/heirline.nvim")
   use("rebelot/kanagawa.nvim")
+  use("vimwiki/vimwiki")
   use {
       'stevearc/aerial.nvim',
       config = function() require('aerial').setup() end
