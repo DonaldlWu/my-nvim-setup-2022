@@ -21,7 +21,8 @@ return require('packer').startup(function(use)
   use("rebelot/heirline.nvim")
   use("rebelot/kanagawa.nvim")
   use("vimwiki/vimwiki")
-  use('mrjones2014/smart-splits.nvim')
+  use("mrjones2014/smart-splits.nvim")
+  use("nvim-tree/nvim-web-devicons")
   use {
       'stevearc/aerial.nvim',
       config = function() require('aerial').setup() end
