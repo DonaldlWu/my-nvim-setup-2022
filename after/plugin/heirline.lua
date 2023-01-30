@@ -337,7 +337,7 @@ local DefaultStatusline = {
 
 local InactiveStatusline = {
     condition = conditions.is_not_active,
-    FileType, Space, TerminalName, Align,
+    Git, Space, FileName
 }
 
 local SpecialStatusline = {
