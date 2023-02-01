@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
   use("rebelot/kanagawa.nvim")
+  use 'JoosepAlviste/palenightfall.nvim'
   use("vimwiki/vimwiki")
   use("mrjones2014/smart-splits.nvim")
   use("nvim-tree/nvim-web-devicons")
