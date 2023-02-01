@@ -1,5 +1,9 @@
 vim.opt.termguicolors = true
-require("bufferline").setup{}
+require("bufferline").setup{
+    options = {
+        separator_style = "padded_slant"
+    }
+}
 
 -- mapping
 vim.keymap.set("n", "<S-h>", "<cmd>BufferLineCyclePrev<cr>")
