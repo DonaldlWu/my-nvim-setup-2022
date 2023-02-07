@@ -19,12 +19,12 @@ return require('packer').startup(function(use)
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
   use('rbong/vim-flog')
-  use("rebelot/kanagawa.nvim")
+  use('rebelot/kanagawa.nvim')
   use('JoosepAlviste/palenightfall.nvim')
-  use("lunarvim/Onedarker.nvim")
-  use("vimwiki/vimwiki")
-  use("mrjones2014/smart-splits.nvim")
-  use("nvim-tree/nvim-web-devicons")
+  use('lunarvim/Onedarker.nvim')
+  use('vimwiki/vimwiki')
+  use('mrjones2014/smart-splits.nvim')
+  use('nvim-tree/nvim-web-devicons')
   use {
       'stevearc/aerial.nvim',
       config = function() require('aerial').setup() end
@@ -64,40 +64,40 @@ return require('packer').startup(function(use)
     end
   }
 
-  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-      require("toggleterm").setup()
+  use {'akinsho/toggleterm.nvim', tag = '*', config = function()
+      require('toggleterm').setup()
   end}
 
-  use("folke/zen-mode.nvim")
-  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  use('folke/zen-mode.nvim')
+  use {'akinsho/bufferline.nvim', tag = 'v3.*', requires = 'nvim-tree/nvim-web-devicons'}
 
   use {
   'lewis6991/gitsigns.nvim',
   }
 
   use {
-  "nvim-neo-tree/neo-tree.nvim",
-    branch = "v2.x",
+  'nvim-neo-tree/neo-tree.nvim',
+    branch = 'v2.x',
     requires = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-      "MunifTanjim/nui.nvim",
+      'nvim-lua/plenary.nvim',
+      'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
+      'MunifTanjim/nui.nvim',
     }
   }
 
-  local parameter = os.getenv("OPENAI_API_KEY")
+  local parameter = os.getenv('OPENAI_API_KEY')
   if parameter ~= nil then
     use({
-      "jackMort/ChatGPT.nvim",
+      'jackMort/ChatGPT.nvim',
         config = function()
-          require("chatgpt").setup({
+          require('chatgpt').setup({
             -- optional configuration
           })
         end,
         requires = {
-          "MunifTanjim/nui.nvim",
-          "nvim-lua/plenary.nvim",
-          "nvim-telescope/telescope.nvim"
+          'MunifTanjim/nui.nvim',
+          'nvim-lua/plenary.nvim',
+          'nvim-telescope/telescope.nvim'
         }
     })
   end
