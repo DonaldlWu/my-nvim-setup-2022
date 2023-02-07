@@ -83,4 +83,22 @@ return require('packer').startup(function(use)
       "MunifTanjim/nui.nvim",
     }
   }
+
+  local parameter = os.getenv("OPENAI_API_KEY")
+  if parameter == nil then
+    use({
+      "jackMort/ChatGPT.nvim",
+        config = function()
+          require("chatgpt").setup({
+            -- optional configuration
+          })
+        end,
+        requires = {
+          "MunifTanjim/nui.nvim",
+          "nvim-lua/plenary.nvim",
+          "nvim-telescope/telescope.nvim"
+        }
+    })
+  end
+
 end)
