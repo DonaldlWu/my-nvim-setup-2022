@@ -79,7 +79,7 @@ return require('packer').startup(function(use)
   }
 
   local parameter = os.getenv("OPENAI_API_KEY")
-  if parameter == nil then
+  if parameter ~= nil then
     use({
       "jackMort/ChatGPT.nvim",
         config = function()
