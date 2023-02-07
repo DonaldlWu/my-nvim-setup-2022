@@ -1,5 +1,5 @@
 function SetColorScheme(color)
-	color = color or "Onedarker"
+	color = color or "palenightfall"
 	vim.cmd.colorscheme(color)
 end
 
