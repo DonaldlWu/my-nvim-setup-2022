@@ -11,6 +11,9 @@ if vim.fn.has('nvim') == 1 then
         if has('nvim')
           tmap <C-o> <C-\><C-n>
         endif
+
+        nmap <silent> <leader>t :TestNearest<CR>
+        nmap <silent> <leader>T :TestFile<CR>
     ]],
     true)
 end
