@@ -1,6 +1,6 @@
 require("toggleterm").setup{
     direction = 'float',
-    open_mapping = [[<c-h>]]
+    open_mapping = [[<c-\>]]
 }
 
 -- key mapping
