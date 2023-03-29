@@ -50,6 +50,9 @@ lsp.set_preferences({
     }
 })
 
+local lspconfig = require('lspconfig')
+lspconfig.sourcekit.setup{}
+
 lsp.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
 
