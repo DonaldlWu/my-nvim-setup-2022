@@ -27,6 +27,8 @@ return require('packer').startup(function(use)
   use('vimwiki/vimwiki')
   use('mrjones2014/smart-splits.nvim')
   use('nvim-tree/nvim-web-devicons')
+  use('luisiacc/gruvbox-baby')
+  use('onsails/lspkind.nvim')
   use {
       'stevearc/aerial.nvim',
       config = function() require('aerial').setup() end
