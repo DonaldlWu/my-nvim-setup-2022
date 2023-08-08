@@ -40,6 +40,8 @@ return require('packer').startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim')
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  requires = {
