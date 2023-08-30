@@ -76,7 +76,7 @@ return require('packer').startup(function(use)
   end}
 
   use('folke/zen-mode.nvim')
-  use {'akinsho/bufferline.nvim', tag = 'v3.*', requires = 'nvim-tree/nvim-web-devicons'}
+  -- use {'akinsho/bufferline.nvim', tag = 'v3.*', requires = 'nvim-tree/nvim-web-devicons'}
 
   use {
   'lewis6991/gitsigns.nvim',
